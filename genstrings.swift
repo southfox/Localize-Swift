@@ -7,7 +7,7 @@ class GenStrings {
     let fileManager = NSFileManager.defaultManager()
     let acceptedFileExtensions = ["swift"]
     let excludedFolderNames = ["Carthage"]
-    let excludedFileNames = ["main.swift"]
+    let excludedFileNames = ["genstrings.swift"]
     var regularExpresions = [String:NSRegularExpression]()
 
     let localizedRegex = "\"([^\"]*)\".localized()"
