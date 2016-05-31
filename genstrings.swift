@@ -9,8 +9,8 @@ class GenStrings {
     let excludedFolderNames = ["Carthage"]
     let excludedFileNames = ["genstrings.swift"]
     var regularExpresions = [String:NSRegularExpression]()
-
-    let localizedRegex = "\"([^\"]*)\".localized()"
+    
+    let localizedRegex = "(?<=\")([^\"]*)(?=\".(localized|localizedFormat))|(?<=(Localized|NSLocalizedString)\\(\")([^\"]*?)(?=\")"
     
     enum GenstringsError:ErrorType {
         case Error
