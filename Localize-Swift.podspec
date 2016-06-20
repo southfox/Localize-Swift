@@ -11,5 +11,6 @@ Pod::Spec.new do |s|
   s.source_files = "Localize"
   s.platform = :ios
   s.ios.deployment_target = "8.0"
+  s.watchos.deployment_target = '2.2'
   s.requires_arc = true
 end
